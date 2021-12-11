@@ -15,6 +15,6 @@ function ticker(time) {
   }
 }
 
-let d = new Date();
+//let d = new Date();
 //let time;
 t = setInterval(ticker.bind(this, 10), 1000);
