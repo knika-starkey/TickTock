@@ -1,7 +1,7 @@
 let tick = true;
 let t;
-
-let ticker = () => {
+let n = +prompt("Enter time in seconds");
+t = setInterval(() => {
   if (tick) {
     document.write("Тик ");
     tick = false;
@@ -9,9 +9,7 @@ let ticker = () => {
     document.write("Так ");
     tick = true;
   }
-};
-let n = +prompt("Enter time in seconds");
-t = setInterval(ticker, 1000);
+}, 1000);
 setTimeout(() => {
   clearInterval(t);
   alert("stop");
